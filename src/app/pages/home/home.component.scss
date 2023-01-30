@@ -43,7 +43,8 @@
       position: relative;
       transition: 2s linear;
       animation: cubeRotate 10s linear infinite forwards reverse;
-      transition: 0.4s ease-in-out;
+      transition: 1s ease-in-out;
+      cursor: pointer;
       &:hover {
         animation-play-state: paused;
       }
