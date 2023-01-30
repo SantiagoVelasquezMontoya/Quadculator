@@ -1,0 +1,52 @@
+.form-container {
+  width: 100%;
+  max-width: 350px;
+  min-width: 200px;
+  border: 2px solid gray;
+  padding: 1em;
+  form {
+    width: 100%;
+    font-family: "Karla";
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 10px;
+    .input-group {
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      flex-direction: column;
+      gap: 5px;
+      label {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: gray;
+      }
+      input {
+        font-size: 1.1rem;
+        border: 0;
+        background: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        padding: 0.2em;
+      }
+    }
+    button {
+      font-size: 1.1rem;
+      padding: 0.4em 0.8em;
+      border: 1px solid dodgerblue;
+      background: dodgerblue;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      &:hover {
+        background: #000044;
+        border: 1px solid #000044;
+      }
+    }
+  }
+  .result {
+    font-family: "Karla";
+  }
+}

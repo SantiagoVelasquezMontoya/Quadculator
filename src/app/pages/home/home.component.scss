@@ -1,0 +1,19 @@
+.section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  .title {
+    font-family: "Karla", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #000044;
+    margin-bottom: 2.25rem;
+  }
+  .calc-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

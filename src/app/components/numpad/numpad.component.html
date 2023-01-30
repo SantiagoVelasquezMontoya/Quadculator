@@ -1,0 +1,32 @@
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="input-group">
+      <label for="n1">Number 1</label>
+      <input
+        type="number"
+        name="n1"
+        id="n1"
+        [(ngModel)]="n1"
+        (input)="onInput()"
+        autocomplete="off"
+        required
+      />
+    </div>
+    <div class="input-group">
+      <label for="n2">Number 2</label>
+      <input
+        type="number"
+        name="n2"
+        id="n2"
+        [(ngModel)]="n2"
+        (input)="onInput()"
+        autocomplete="off"
+        required
+      />
+    </div>
+    <h3 class="result">
+      Result: <span>{{ result }}</span>
+    </h3>
+    <button type="submit">{{ buttonText }}</button>
+  </form>
+</div>
