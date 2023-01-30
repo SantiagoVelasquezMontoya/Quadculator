@@ -1,5 +1,6 @@
 <div class="form-container">
   <form (ngSubmit)="onSubmit()">
+    <h2 class="title">{{ title }}</h2>
     <div class="input-group">
       <label for="n1">Number 1</label>
       <input
@@ -10,6 +11,7 @@
         (input)="onInput()"
         autocomplete="off"
         required
+        minlength="2"
       />
     </div>
     <div class="input-group">
@@ -27,6 +29,10 @@
     <h3 class="result">
       Result: <span>{{ result }}</span>
     </h3>
-    <button type="submit">{{ buttonText }}</button>
+
+    <button type="reset" class="btn reset-btn">Reset</button>
+    <button type="submit" [ngStyle]="{ background: buttonColor }">
+      {{ buttonText }}
+    </button>
   </form>
 </div>

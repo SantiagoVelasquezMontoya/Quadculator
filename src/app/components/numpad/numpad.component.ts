@@ -13,6 +13,8 @@ export class NumpadComponent implements OnInit {
   n2: number;
   @Input() buttonText: string;
   @Input() result: any;
+  @Input() title: string;
+  @Input() buttonColor: string;
   @Output() operationEmitter: EventEmitter<number[]> = new EventEmitter();
   constructor() {}
 
@@ -21,6 +23,5 @@ export class NumpadComponent implements OnInit {
   onSubmit() {
     this.operationEmitter.emit([this.n1, this.n2]);
   }
-
   onInput() {}
 }

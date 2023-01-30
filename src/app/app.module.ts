@@ -10,10 +10,24 @@ import { FormsModule } from '@angular/forms';
 import { SubtractComponent } from './components/subtract/subtract.component';
 import { MultiplyComponent } from './components/multiply/multiply.component';
 import { DivideComponent } from './components/divide/divide.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent, PlusComponent, HomeComponent, NumpadComponent, SubtractComponent, MultiplyComponent, DivideComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    PlusComponent,
+    HomeComponent,
+    NumpadComponent,
+    SubtractComponent,
+    MultiplyComponent,
+    DivideComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

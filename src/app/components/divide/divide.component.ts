@@ -11,6 +11,10 @@ export class DivideComponent implements OnInit {
 
   ngOnInit(): void {}
   operation(n1: any) {
+    if (n1[1] === 0) {
+      alert('Cant divide by  Zero');
+      return;
+    }
     console.log('Divide', n1);
     this.result = n1[0] / n1[1];
   }

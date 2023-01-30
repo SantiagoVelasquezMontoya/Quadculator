@@ -1,9 +1,19 @@
 <section class="section home-section">
-  <h1 class="title">Calculator Grid</h1>
-  <div class="calc-grid">
-    <app-plus></app-plus>
-    <app-subtract></app-subtract>
-    <app-multiply></app-multiply>
-    <app-divide></app-divide>
+  <h1 class="title">
+    Calculator Grid
+    <div
+      [ngStyle]="{ background: cubeMode ? 'black' : 'white' }"
+      class="checkmark"
+      (click)="toggleMode()"
+    ></div>
+  </h1>
+  <div [ngClass]="cubeMode ? 'scene' : 'blank'">
+    <div class="calc-grid cube">
+      <app-plus class="face face-front"></app-plus>
+      <app-subtract class="face face-right"></app-subtract>
+      <app-multiply class="face face-back"></app-multiply>
+      <app-divide class="face face-left"></app-divide>
+    </div>
   </div>
+  <div class="img-container"></div>
 </section>
