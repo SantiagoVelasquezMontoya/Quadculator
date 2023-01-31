@@ -21,6 +21,10 @@ export class NumpadComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit() {
+    if (!this.n1 || !this.n2) {
+      alert('Fill all the numbers');
+      return;
+    }
     this.operationEmitter.emit([this.n1, this.n2]);
   }
   onInput() {}
