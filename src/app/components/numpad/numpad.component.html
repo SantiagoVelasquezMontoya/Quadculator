@@ -8,7 +8,6 @@
         name="n1"
         id="n1"
         [(ngModel)]="n1"
-        (input)="onInput()"
         autocomplete="off"
         required
       />
@@ -20,7 +19,6 @@
         name="n2"
         id="n2"
         [(ngModel)]="n2"
-        (input)="onInput()"
         autocomplete="off"
         required
       />
@@ -30,7 +28,11 @@
     </h3>
 
     <button type="reset" class="btn reset-btn">Reset</button>
-    <button type="submit" [ngStyle]="{ background: buttonColor }">
+    <button
+      type="submit"
+      [ngStyle]="{ background: buttonColor }"
+      class="btn submit-btn"
+    >
       {{ buttonText }}
     </button>
   </form>

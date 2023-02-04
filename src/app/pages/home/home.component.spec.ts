@@ -8,9 +8,8 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -21,5 +20,17 @@ describe('HomeComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('Should toggle the Boolean variable', () => {
+    let cubeMode: boolean = component.cubeMode;
+    component.cubeMode = false;
+    //let button = fixture.nativeElement.querySelector('.checkmark');
+
+    component.toggleMode();
+    //button.click();
+    // fixture.detectChanges();
+
+    expect(component.cubeMode).toBeTruthy();
   });
 });

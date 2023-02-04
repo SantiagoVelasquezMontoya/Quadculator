@@ -13,13 +13,12 @@ body {
   background: url(./assets/wave.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  //background-position: center center;
-  animation: 10s wavy ease-in-out infinite forwards alternate;
+  animation: 15s wavy ease-in-out infinite forwards alternate;
 }
 
 @keyframes wavy {
   0% {
-    background-position: 50%;
+    background-position: 0%;
   }
   100% {
     background-position: 100%;

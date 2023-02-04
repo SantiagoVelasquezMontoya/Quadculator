@@ -12,8 +12,9 @@ export class SubtractComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  operation(n1: any) {
+  operation(n1: any): number {
     console.log('Resta ', n1);
     this.result = n1[0] - n1[1];
+    return this.result;
   }
 }

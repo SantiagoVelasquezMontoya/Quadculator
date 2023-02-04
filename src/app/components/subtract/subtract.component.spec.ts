@@ -8,9 +8,8 @@ describe('SubtractComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SubtractComponent ]
-    })
-    .compileComponents();
+      declarations: [SubtractComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -21,5 +20,13 @@ describe('SubtractComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('Should Subtract the numbers in the array correctly', () => {
+    let numbers = [1, 2];
+    let result = component.operation(numbers);
+    let res = numbers[0] - numbers[1];
+
+    expect(res).toEqual(component.result);
   });
 });
